@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+    <title> ЗАЯВЛЕНИЕ </title>
+        <style>
+        p.dline {
+        line-height: 2;
+        }
+        P {
+        line-height: 1.8em;
+        }
+        ul {
+        padding: 0; /* Убираем поля */
+        margin-left: 650px; /* Отступ слева */
+        }
+        
+        li {
+        color: rgb(0, 0, 0); /* Цвет маркеров */
+        }
+        li span {
+        color: rgb(0, 0, 0); /* Цвет текста */
+        }
+        a { 
+        text-decoration: none; /* Отменяем подчеркивание у ссылки */
+        } 
+        a:hover {
+            background-color: rgb(27, 38, 160, 0.212);
+        }
+        a.active {
+        background-color: rgb(255, 78, 237, 0.212);
+        }
+        p {
+        font-style: italic;
+        }
+        </style>
+</head>
+<body style="background-color: rgb(184, 228, 243);">
+<h1 style="text-align: center;"> МЕНЮ </h1> 
+        <ul>
+            <li> <a href='main.html' > <span>главная страница</span> </a> </li>
+            <li> <a href='page1.html'> <span> о нас </span> </a> </li>
+            <li> <a href='page2.html' > <span> сорта кофе </span> </a> </li>
+            <li> <a href='page3.html'> <span>кофе </span></a> </li>
+            <li> <a href='page4.html' > <span>наши бариста </span> </a> </li>
+            <li> <a href='page5.html' ><span> ваши контакты  </span></a> </li>
+            <li> <a href='page6.html' class="active"> <span>заявление на работу</span></a> </li>
+            <li> <a href="page8.html" target="_blank"> <span> вывеска </span> </a> </li>
+            <li> <a href="https://ru.wikipedia.org/wiki/%D0%98%D1%81%D1%82%D0%BE%D1%80%D0%B8%D1%8F_%D0%BA%D0%BE%D1%84%D0%B5" target="_blank"><span> внешний сайт про историю кофе</span> </a> </li>
+            <li> <a href="https://ru.wikipedia.org/wiki/%D0%98%D1%81%D1%82%D0%BE%D1%80%D0%B8%D1%8F_%D0%BA%D0%BE%D1%84%D0%B5" target="_blank"><img src="../img/zerna.jpg" width= "40px" alt="" /></a></li>
+            <li> <a href='passport.html'> <span>паспорт</span></a> </li>
+            <li> <a href='DOM_JS.html'> <span>DOM_JS.Считываем информацию из DOM</span></a></li>
+            <li> <a href='algoritm.html'> <span>алгоритмическая задача</span> </a> </li>
+        </ul>
+    <form action="https://httpbin.org/get" id="UserEnter" name="UserEnter" target="_blank" method="get">
+
+    <p>Имя <input type="Text" name="name"> </p>
+
+    <p>Фамилия <input type="Text" name="surname"> </p>
+
+    <p>Сколько вам лет? <input type="number" name="age" min="16" max="70" value="18"></p>
+    
+    <p><b> Кем бы хотели работать?</b><Br>
+    <input type="radio" name="prof" value="barista" checked> Бариста <Br>
+    <input type="radio" name="prof" value="manager"> Менеджер <Br>
+    <input type="radio" name="prof" value="waiter"> Официант <Br>
+    <input type="radio" name="prof" value="accountant"> Бухгалтер <Br>
+    <input type="radio" name="prof" value="cleaner"> Уборщик <Br>
+
+
+        <p> <b>Почему хотите у нас работать?</b> <Br>
+    <textarea name="comment" cols="100" rows="3"></textarea></p>
+
+    <p><b> Есть ли у вас стаж работы? </b><Br>
+    <input type="radio" name="seniority" value="yes" checked> Да <Br>
+    <input type="radio" name="seniority" value="no"> Нет <Br>
+    
+
+    <p> Если да, то кем?
+            <input type="Checkbox" name="experience" value="barista" checked> Бариста
+            <input type="Checkbox" name="experience" value="manager" > Менеджер
+            <input type="Checkbox" name="experience" value="waiter"  > Официант
+            <input type="Checkbox" name="experience" value="accountant"> Бухгалтер
+            <input type="Checkbox" name="experience" value="cleaner" > Уборщик
+    </p>
+
+    <p>С какого числа готовы выйти на работу?
+    <input type="date" name="start_date" value="2026-11-01"></p>
+
+    <p>Придумайте пароль для личного кабинета сотрудника:
+    <input type="password" name="staff_pass" value="12345"></p>
+
+    <input type="hidden" name="form_type" value="job_application">
+    <p><input type="submit" value="Отправить">
+    <input type="reset" value="Очистить"></p>
+    </form>
+    </body>
+    </html>

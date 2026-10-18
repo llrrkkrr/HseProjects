@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Паспорт. Изменяем кирилиццу на латиницу по клику</title>
+    <style type="text/css">
+        .passport {
+             position: relative;      /* точка отсчёта для всех элементов внутри */
+            width: 430px;            /* поставьте реальный размер картинки-бланка */
+            height: 600px;
+            background-image: url(../img/passpotr_shablon11.png);
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            }
+        .passport div {
+        position: absolute;
+            }
+
+        .vid      { left: 90px;  top: 65px; }
+        .date_vid { left: 95px;  top: 130px; }
+        .sur      { left: 235px; top: 325px; }
+        .name     { left: 235px; top: 370px; }
+        .mid      { left: 235px; top: 390px; }
+        .date     { left: 168px; top: 415px; }
+        .place    { left: 188px; top: 435px; }
+        .img      { left: 35px;  top: 370px; }
+
+        .button   { margin-top: 0px; }
+        
+        p.dline {
+        line-height: 2;
+        }
+        P {
+        line-height: 1.8em;
+        }
+        ul {
+        padding: 0; /* Убираем поля */
+        margin-left: 650px; /* Отступ слева */
+        }
+        
+        li {
+        color: rgb(0, 0, 0); /* Цвет маркеров */
+        }
+        li span {
+        color: rgb(0, 0, 0); /* Цвет текста */
+        }
+        a { 
+        text-decoration: none; /* Отменяем подчеркивание у ссылки */
+        } 
+        a:hover {
+            background-color: rgba(27, 38, 160, 0.212);
+        }
+        a.active {
+        background-color: rgba(255, 78, 237, 0.212);
+        }
+        p {
+        font-style: italic;
+        }
+    
+    </style>
+</head>
+<body style="background-color: rgb(184, 228, 243);">
+<h1 style="text-align: center;"> МЕНЮ </h1> 
+        <ul>
+            <li> <a href='main.html' > <span>главная страница</span> </a> </li>
+            <li> <a href='page1.html'> <span> о нас </span> </a> </li>
+            <li> <a href='page2.html' > <span> сорта кофе </span> </a> </li>
+            <li> <a href='page3.html'> <span>кофе </span></a> </li>
+            <li> <a href='page4.html' > <span>наши бариста </span> </a> </li>
+            <li> <a href='page5.html' ><span> ваши контакты  </span></a> </li>
+            <li> <a href='page6.html' > <span>заявление на работу</span></a> </li>
+            <li> <a href="page8.html" target="_blank" > <span> вывеска </span> </a> </li>
+            <li> <a href="https://ru.wikipedia.org/wiki/%D0%98%D1%81%D1%82%D0%BE%D1%80%D0%B8%D1%8F_%D0%BA%D0%BE%D1%84%D0%B5" target="_blank"><span> внешний сайт про историю кофе</span> </a> </li>
+            <li> <a href="https://ru.wikipedia.org/wiki/%D0%98%D1%81%D1%82%D0%BE%D1%80%D0%B8%D1%8F_%D0%BA%D0%BE%D1%84%D0%B5" target="_blank"><img src="../img/zerna.jpg" width= "40px" alt="" /></a></li>
+            <li> <a href='passport.html' class="active"> <span>паспорт</span></a> </li>
+            <li> <a href='DOM_JS.html'> <span>DOM_JS.Считываем информацию из DOM</span></a></li>
+            <li> <a href='algoritm.html'> <span>алгоритмическая задача</span> </a> </li>
+        </ul>
+
+<div class="passport">
+    <div class="sur">Короткова</div>
+    <div class="name">Валерия</div>
+    <div class="mid">Юрьевна</div>
+    <div class="date">Жен &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 26.03.2007</div>
+    <div class="img"> <img src="../img/pass_my.jpg" height="110" width="100"> </div>
+    <div class="date_vid"> 20.05.2014&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;770-070</div>
+    <div class="vid">УВМ УМВД ПО ПРИМОРСКОМУ КРАЮ</div>
+    <div class="place">Г.ВЛАДИВОСТОК</div>
+</div>
+<button class="button" id="change">Заменить</button>
+<script src = "../js/passport.js"> </script>
+</body>
+
+</html>

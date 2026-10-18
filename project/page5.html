@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+    <title> ВАШИ КОНТАКТЫ </title>
+        <style>
+        p.dline {
+        line-height: 2;
+        }
+        P {
+        line-height: 1.8em;
+        }
+        ul {
+        padding: 0; /* Убираем поля */
+        margin-left: 650px; /* Отступ слева */
+        }
+        
+        li {
+        color: rgb(0, 0, 0); /* Цвет маркеров */
+        }
+        li span {
+        color: rgb(0, 0, 0); /* Цвет текста */
+        }
+        a { 
+        text-decoration: none; /* Отменяем подчеркивание у ссылки */
+        } 
+        a:hover {
+            background-color: rgb(27, 38, 160, 0.212);
+        }
+        a.active {
+        background-color: rgb(255, 78, 237, 0.212);
+        }
+        p {
+        font-style: italic;
+        }
+        </style>
+</head>
+<body style="background-color: rgb(184, 228, 243);">
+<h1 style="text-align: center;"> МЕНЮ </h1> 
+        <ul>
+            <li> <a href='main.html' > <span>главная страница</span> </a> </li>
+            <li> <a href='page1.html'> <span> о нас </span> </a> </li>
+            <li> <a href='page2.html' > <span> сорта кофе </span> </a> </li>
+            <li> <a href='page3.html'> <span>кофе </span></a> </li>
+            <li> <a href='page4.html' > <span>наши бариста </span> </a> </li>
+            <li> <a href='page5.html' class="active"><span> ваши контакты  </span></a> </li>
+            <li> <a href='page6.html'> <span>заявление на работу</span></a> </li>
+            <li> <a href="page8.html" target="_blank"> <span> вывеска </span> </a> </li>
+            <li> <a href="https://ru.wikipedia.org/wiki/%D0%98%D1%81%D1%82%D0%BE%D1%80%D0%B8%D1%8F_%D0%BA%D0%BE%D1%84%D0%B5" target="_blank"><span> внешний сайт про историю кофе</span> </a> </li>
+            <li> <a href="https://ru.wikipedia.org/wiki/%D0%98%D1%81%D1%82%D0%BE%D1%80%D0%B8%D1%8F_%D0%BA%D0%BE%D1%84%D0%B5" target="_blank"><img src="../img/zerna.jpg" width= "40px" alt="" /></a></li>
+            <li> <a href='passport.html'> <span>паспорт</span></a> </li>
+            <li> <a href='DOM_JS.html'> <span>DOM_JS.Считываем информацию из DOM</span></a></li>
+            <li> <a href='algoritm.html'> <span>алгоритмическая задача</span> </a> </li>
+        </ul>
+    <form action="https://httpbin.org/get" id="UserEnter" name="UserEnter" target="_blank" method="get">
+        
+        
+
+
+    <p>Имя <input type="Text" name="name"> </p>
+
+    <p>Фамилия <input type="Text" name="surname"> </p>
+
+    <p>Ваша группа:</p>
+    <input type="radio" name="group" value="1"> 1 <Br>
+    <input type="radio" name="group" value="2"> 2 <Br>
+    <input type="radio" name="group" value="3"> 3 <Br>
+    <input type="radio" name="group" value="4"> 4 <Br>
+    <input type="radio" name="group" value="5"> 5 <Br>
+
+    <p>Дата отправки: <input type="date" name="user_date" value=''></p>
+
+    <p>Почта: <input type="email" name="user_mail" value="test@mail.ru"> </p>
+
+    <p>Пароль: <input type="password" name="user_pass" value="00000"></p>
+
+    <p>Номер телефона: <input type="tel" name="user_number" value="+7 900 000-00-00"></p>
+
+    <p><input type="submit" value="Отправить">
+    <input type="reset" value="Очистить"></p>
+    </form>
+
+</body>
+</html>
